@@ -4,7 +4,6 @@
 <head>
 	<title>Job03</title>
 	<link href="style.css" rel="stylesheet">
-</style>
 </head>
 
 <body>
