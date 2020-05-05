@@ -16,7 +16,7 @@
 <hearder>
   <nav>
     <div class="nav-wrapper grey lighten-1">
-      <a href="#" class="brand-logo"><img src="logo.png" width="50px">Volkswagen</a>
+      <a href="" class="brand-logo"><img src="logo.png" width="50px">Volkswagen</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="">Accueil</a></li>
         <li><a href="">lien 2</a></li>
