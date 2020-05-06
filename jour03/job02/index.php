@@ -43,6 +43,17 @@
 </nav>
 </header>
 
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="content"></p>
+  </div>
+</div>
+
+
+
 <h1 class="text-center display-4 mb-4">LaPlateforme_</h1>
 
 
@@ -170,12 +181,12 @@
           <div class="input-group-prepend">
             <div class="input-group-text">@</div>
           </div>
-          <input type="text" class="form-control" placeholder="Login">
+          <input id="login" type="text" class="form-control" placeholder="Login">
         </div>
       </div>
       <div class="col-auto mb-2">
         <div class="input-group mb-2">
-          <input type="text" class="form-control" placeholder="Mot de Passe">
+          <input id="password" type="text" class="form-control" placeholder="Mot de Passe">
           <div class="input-group-prepend">
             <div class="input-group-text">@example.com</div>
           </div>
@@ -186,14 +197,14 @@
           <label for="exampleInputEmail1">URL des Internets 2 et 2.1 Beta</label>
           <div class="input-group-prepend mb-2">
             <div class="input-group-text">DogeCoin</div>
-            <input type="text" class="form-control">
+            <input id="dogecoin" type="text" class="form-control">
             <div class="input-group-text">.00</div>
           </div>
       </div>
       <div class="col-auto">
           <div class="input-group-prepend">
             <div class="input-group-text">https://133.lptf/dkwb/berlusconimkt/</div>
-            <input type="text" class="form-control">
+            <input id="url" type="text" class="form-control">
           </div>  
       </div>
     </div>
@@ -202,11 +213,11 @@
     <div class="d-flex flex-column">
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control">
+        <input id="email" type="email" class="form-control">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
+        <label id="password2" for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control">
       </div>
       <div class="form-group form-check">
