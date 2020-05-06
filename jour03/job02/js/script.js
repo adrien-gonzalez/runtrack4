@@ -1,5 +1,3 @@
-
-
 var nb_citation = 6
 var tab_citation=["Tous ces moments se perdront dans l’oubli, comme des larmes dans la pluie.", "T’endors pas c’est l’heure de mourir.",
 			"Wake up, time to die.", "Avez-vous déjà désactivé un humain par erreur ?",
@@ -8,12 +6,15 @@ var tab_citation=["Tous ces moments se perdront dans l’oubli, comme des larmes
 
 citation = tab_citation[getRandomInt(nb_citation)]
 
+
+
+
 // RETOURNE CITATION ALEATOIRE
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 $(document).ready(function () {
-
+	prc=$("#progressbar").text()
 	document.getElementById("contenu2").style.display = "none";
 	document.getElementById("contenu3").style.display = "none";
 
@@ -54,6 +55,24 @@ $(document).ready(function () {
 
 		$("."+classElt).removeClass('active');
 		$("#"+idElt).addClass('active');
+	});
+
+	$("body").on("click", "#left", function () {
+
+		prc = parseInt(prc) - parseInt(1)
+		console.log(prc)
+		$("#progressbar").css({"width": +prc+"%"})
+		$("#progressbar").text(prc)
+
+			
+	});
+
+	$("body").on("click", "#right", function () {
+
+		prc = parseInt(prc) + parseInt(1)
+		console.log(prc)
+		$("#progressbar").css({"width": +prc+"%"})
+		$("#progressbar").text(prc)
 	});
 });
 
